@@ -54,8 +54,13 @@ import homebanner1 from "../../public/img/home2/home2-banner-img1.jpg";
 import homebanner2 from "../../public/img/home2/home2-banner-img2.jpg";
 import homebanner3 from "../../public/img/home2/home2-banner-img3.jpg";
 import homebanner4 from "../../public/img/home2/home2-banner-img4.jpg";
+import login_modal_header_img from "../../public/img/home1/login-modal-header-img.jpg";
+
+import google_icon from "../../public/img/home1/icon/google-icon.svg";
 
 export {
+  google_icon,
+  login_modal_header_img,
   homebanner1,
   homebanner2,
   homebanner3,

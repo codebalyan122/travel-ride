@@ -11,6 +11,7 @@ import "swiper/swiper-bundle.css";
 import { logo1 } from "../imagesImports";
 
 import {
+  google_icon,
   banner1,
   banner23,
   banner33,
@@ -19,6 +20,7 @@ import {
   homebanner2,
   homebanner3,
   homebanner4,
+  login_modal_header_img,
 } from "../imagesImports";
 
 const Header = () => {
@@ -35,7 +37,7 @@ const Header = () => {
           <div className="modal-content">
             <div className="modal-clode-btn" data-bs-dismiss="modal"></div>
             <div className="modal-header">
-              <img src="assets/img/home1/login-modal-header-img.jpg" alt="" />
+              <Image src={login_modal_header_img} alt="" />
             </div>
             <div className="modal-body">
               <div className="login-registration-form">
@@ -55,7 +57,7 @@ const Header = () => {
                   </div>
                   <Link href="#" className="google-login-btn">
                     <div className="icon">
-                      <img src="assets/img/home1/icon/google-icon.svg" alt="" />
+                      <Image src={google_icon} alt="" />
                     </div>
                     Sign in with Google
                   </Link>
@@ -439,7 +441,6 @@ const Header = () => {
           <div className="swiper-wrapper">
             <SwiperSlide>
               <Image src={banner1} alt="" />
-              {/* <img src="assets/img/home2/banner1.png" alt="" /> */}
             </SwiperSlide>
             <SwiperSlide>
               <Image src={banner23} alt="" />

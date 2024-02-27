@@ -240,7 +240,7 @@ const Destinations = () => {
           <div className="row marginbottom10">
             <div className="col-lg-12 d-flex align-items-center justify-content-between flex-wrap gap-3">
               <div className="section-title3">
-                <h2>Explore the Montage of India's cities</h2>
+                <h2>Explore the Montage of India&apos;s cities</h2>
               </div>
               <div className="slider-btn-grp5 marginbottom10">
                 <div className="slider-btn home44-destination-card-prev">
@@ -590,7 +590,7 @@ const Destinations = () => {
           <div className="row marginbottom10">
             <div className="col-lg-12 d-flex align-items-center justify-content-between flex-wrap gap-3">
               <div className="section-title2 two">
-                <h2> Let's discover the heart and soul of India.</h2>
+                <h2>Let&apos;s discover the heart and soul of India.</h2>
               </div>
               {/* <div className="section-btn">
                 <Link href="#" className="primary-btn4 two">

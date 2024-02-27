@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Footer: React.FC = () => {
@@ -211,17 +213,16 @@ const Footer: React.FC = () => {
                   </div>
                 </div>
 
-                <a
+                <Link
                   href="//www.dmca.com/Protection/Status.aspx?ID=57f850de-3652-4348-b02c-762f6cbad55a"
                   title="DMCA.com Protection Status"
                   className="dmca-badge"
                 >
-                  {" "}
-                  <img
+                  <Image
                     src="https://images.dmca.com/Badges/dmca_protected_sml_120m.png?ID=57f850de-3652-4348-b02c-762f6cbad55a"
                     alt="DMCA.com Protection Status"
                   />
-                </a>
+                </Link>
                 <script
                   src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"
                   async
