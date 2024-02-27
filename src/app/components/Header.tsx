@@ -1,16 +1,70 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-// import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 
-// import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/swiper-bundle.css";
 import { logo1 } from "../imagesImports";
+
+import {
+  banner1,
+  banner23,
+  banner33,
+  banner4,
+  homebanner1,
+  homebanner2,
+  homebanner3,
+  homebanner4,
+} from "../imagesImports";
 
 const Header = () => {
   return (
     <>
+      <div
+        className="modal login-modal"
+        id="user-login"
+        data-bs-keyboard="false"
+        tab-index="-1"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+            <div className="modal-clode-btn" data-bs-dismiss="modal"></div>
+            <div className="modal-header">
+              <img src="assets/img/home1/login-modal-header-img.jpg" alt="" />
+            </div>
+            <div className="modal-body">
+              <div className="login-registration-form">
+                <div className="form-title">
+                  <h2>Sign in to continue</h2>
+                  <p>Enter your email address for Login.</p>
+                </div>
+                <form>
+                  <div className="form-inner mb-20">
+                    <input type="text" placeholder="User name or Email *" />
+                  </div>
+                  <Link href="#" className="login-btn mb-25">
+                    Sign In
+                  </Link>
+                  <div className="divider">
+                    <span>or</span>
+                  </div>
+                  <Link href="#" className="google-login-btn">
+                    <div className="icon">
+                      <img src="assets/img/home1/icon/google-icon.svg" alt="" />
+                    </div>
+                    Sign in with Google
+                  </Link>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="top-bar style-2">
         <div className="topbar-left two">
           <div className="icon">
@@ -99,7 +153,7 @@ const Header = () => {
           <div className="mobile-logo-area d-lg-none d-flex justify-content-between align-items-center">
             <div className="mobile-logo-wrap">
               <Link href="index.html">
-                <img alt="image" src="assets/img/logo.png" />
+                {/* <img alt="image" src="assets/img/logo.png" /> */}
               </Link>
             </div>
             <div className="menu-close-btn">
@@ -119,53 +173,53 @@ const Header = () => {
                 <div className="row">
                   <div className="col-md-4">
                     <li>
-                      <Link href="#">Uttarakhand</Link>
+                      <Link href="/destination">Uttarakhand</Link>
                     </li>
                     <li>
-                      <Link href="#">Himachal</Link>
+                      <Link href="/destination">Himachal</Link>
                     </li>
                     <li>
-                      <Link href="#">Rajasthan</Link>
+                      <Link href="/destination">Rajasthan</Link>
                     </li>
                     <li>
-                      <Link href="#">Gujarat</Link>
+                      <Link href="/destination">Gujarat</Link>
                     </li>
                     <li>
-                      <Link href="#">Uttar Pradesh</Link>
-                    </li>
-                  </div>
-                  <div className="col-md-4">
-                    <li>
-                      <Link href="#">Jammu & Kashmir</Link>
-                    </li>
-                    <li>
-                      <Link href="#">Tamil Nadu</Link>
-                    </li>
-                    <li>
-                      <Link href="#">Karnataka</Link>
-                    </li>
-                    <li>
-                      <Link href="#">Maharashtra</Link>
-                    </li>
-                    <li>
-                      <Link href="#">Goa</Link>
+                      <Link href="/destination">Uttar Pradesh</Link>
                     </li>
                   </div>
                   <div className="col-md-4">
                     <li>
-                      <Link href="#">North East</Link>
+                      <Link href="/destination">Jammu & Kashmir</Link>
                     </li>
                     <li>
-                      <Link href="#">Kerala</Link>
+                      <Link href="/destination">Tamil Nadu</Link>
                     </li>
                     <li>
-                      <Link href="#">Madhya Pradesh</Link>
+                      <Link href="/destination">Karnataka</Link>
                     </li>
                     <li>
-                      <Link href="#">Leh Ladakh</Link>
+                      <Link href="/destination">Maharashtra</Link>
                     </li>
                     <li>
-                      <Link href="#">Andaman Nicobar</Link>
+                      <Link href="/destination">Goa</Link>
+                    </li>
+                  </div>
+                  <div className="col-md-4">
+                    <li>
+                      <Link href="/destination">North East</Link>
+                    </li>
+                    <li>
+                      <Link href="/destination">Kerala</Link>
+                    </li>
+                    <li>
+                      <Link href="/destination">Madhya Pradesh</Link>
+                    </li>
+                    <li>
+                      <Link href="/destination">Leh Ladakh</Link>
+                    </li>
+                    <li>
+                      <Link href="/destination">Andaman Nicobar</Link>
                     </li>
                   </div>
                 </div>
@@ -271,7 +325,7 @@ const Header = () => {
         </div>
         <div className="nav-right d-flex jsutify-content-end align-items-center">
           <ul className="icon-list">
-            <li className="d-lg-flex d-none">
+            {/* <li className="d-lg-flex d-none">
               <Link
                 href="#"
                 data-bs-toggle="modal"
@@ -304,7 +358,7 @@ const Header = () => {
                   />
                 </svg>
               </Link>
-            </li>
+            </li> */}
             <li className="right-sidebar-button"></li>
           </ul>
           <div className="hotline-area d-xl-flex d-none">
@@ -339,6 +393,74 @@ const Header = () => {
           </div>
         </div>
       </header>
+
+      {/* <div className="home2-banner-area desktop-view">
+        <div className="swiper home1-banner-slider">
+          <div className="swiper-wrapper">
+            <div className="swiper-slide">
+              <Image src={homebanner1} alt="" />
+            </div>
+            <div className="swiper-slide">
+              <Image src={homebanner2} alt="" />
+            </div>
+            <div className="swiper-slide">
+              <Image src={homebanner3} alt="" />
+            </div>
+            <div className="swiper-slide">
+              <Image src={homebanner4} alt="" />
+            </div>
+          </div>
+        </div>
+        <div className="slider-btn-grp">
+          <div className="slider-btn home1-banner-prev">
+            <i className="bi bi-arrow-left"></i>
+          </div>
+          <div className="slider-btn home1-banner-next">
+            <i className="bi bi-arrow-right"></i>
+          </div>
+        </div>
+      </div> */}
+
+      <div className="home2-banner-area mobile-view">
+        <Swiper
+          spaceBetween={30}
+          centeredSlides={true}
+          // autoplay={{
+          //   delay: 2500,
+          //   disableOnInteraction: false,
+          // }}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          className="mySwiper"
+          modules={[Autoplay, Pagination, Navigation]}
+        >
+          <div className="swiper-wrapper">
+            <SwiperSlide>
+              <Image src={banner1} alt="" />
+              {/* <img src="assets/img/home2/banner1.png" alt="" /> */}
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src={banner23} alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src={banner33} alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src={banner4} alt="" />
+            </SwiperSlide>
+          </div>
+          <div className="slider-btn-grp">
+            <div className="slider-btn home1-banner-prev">
+              <i className="bi bi-arrow-left"></i>
+            </div>
+            <div className="slider-btn home1-banner-next">
+              <i className="bi bi-arrow-right"></i>
+            </div>
+          </div>
+        </Swiper>
+      </div>
     </>
   );
 };

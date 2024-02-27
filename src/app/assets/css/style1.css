@@ -9108,6 +9108,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
 .destination-card {
   position: relative;
   transition: 0.5s;
+  margin-right: 7px;
 }
 
 @media (max-width: 991px) {
@@ -14672,6 +14673,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   position: relative;
   display: block;
   transition: 0.5s;
+  margin-right: -22px;
 }
 
 .destination-card2 .destination-card-img {
@@ -25445,6 +25447,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   position: relative;
   border-radius: 5px;
   overflow: hidden;
+  margin-right: -22px;
 }
 
 .activity-card img {
@@ -28297,6 +28300,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   background: var(--white-color);
   transition: 0.5s;
   border-radius: 10px;
+  margin-right: 7px;
 }
 
 .category-card .card-img {
@@ -40181,4 +40185,11 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   content: "";
   display: inline-block;
   position: absolute;
+}
+/* .mb-10 {
+  margin-bottom: 5px;
+} */
+
+.marginbottom10 {
+  margin-bottom: 1.5rem;
 }

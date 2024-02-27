@@ -33,8 +33,49 @@ import banglore from "../../public/img/destination/banglore.jpg";
 import ahmedabad from "../../public/img/destination/ahmedabad.jpg";
 import pune from "../../public/img/destination/pune.jpg";
 import kolkata from "../../public/img/destination/kolkata.jpg";
+import adventure from "../../public/img/destination/adventure.jpg";
+import pilgrimage from "../../public/img/destination/pilgrimage.jpg";
+import wildlife from "../../public/img/destination/wildlife.jpg";
+import historical from "../../public/img/destination/historical.jpg";
+import honeymoon from "../../public/img/destination/honeymoon.jpg";
+import luxury from "../../public/img/destination/luxury.jpg";
+import group from "../../public/img/destination/group.jpg";
+import whytravel from "../../public/img/testimonial-el-3.cd348526923b71d9.png";
+import blogcard1 from "../../public/img/home5/blog-card-img1.jpg";
+import blogcard2 from "../../public/img/home5/blog-card-img2.jpg";
+import blogcard3 from "../../public/img/home5/blog-card-3.jpg";
+import blogcard4 from "../../public/img/home5/blog-card-4.jpg";
+import banner1 from "../../public/img/home2/banner1.png";
+import banner23 from "../../public/img/home2/banner2.png";
+import banner33 from "../../public/img/home2/banner3.png";
+import banner4 from "../../public/img/home2/banner4.png";
+
+import homebanner1 from "../../public/img/home2/home2-banner-img1.jpg";
+import homebanner2 from "../../public/img/home2/home2-banner-img2.jpg";
+import homebanner3 from "../../public/img/home2/home2-banner-img3.jpg";
+import homebanner4 from "../../public/img/home2/home2-banner-img4.jpg";
 
 export {
+  homebanner1,
+  homebanner2,
+  homebanner3,
+  homebanner4,
+  banner1,
+  banner23,
+  banner33,
+  banner4,
+  blogcard1,
+  blogcard2,
+  blogcard3,
+  blogcard4,
+  whytravel,
+  adventure,
+  pilgrimage,
+  wildlife,
+  historical,
+  honeymoon,
+  luxury,
+  group,
   delhi,
   mumbai,
   chennai,
